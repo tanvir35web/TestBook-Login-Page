@@ -20,27 +20,36 @@ body {
     background-color: var(--bg-color);
 }
 
-.bodyArea {
+.body-wrapper {
     height: 79vh;
     display: flex;
     flex-direction: row;
     max-width: 900px;
-    /* min-width: 700px; */
     margin: auto;
     align-items: center;
-    gap: 50px;
-    padding: 30px;
+}
+
+.body-area {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .heading-subheading {
     width: auto;
     display: flex;
     flex-direction: column;
+    margin-bottom: 160px;
 }
 
 .facebook {
     color: var(--blue-color);
-    font-size: 45px;
+    font-size: 50px;
 }
 
 .facebook-subtitle {
@@ -49,21 +58,19 @@ body {
 }
 
 .form {
-    height: 350px;
+    height: 330px;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 15px;
+    padding: 15px 15px 0 15px;
     gap: 12px;
-    /* margin-bottom: 80px; */
-    /* margin-right: 18px; */
 }
 
 input {
-    font-size: 17px;
-    padding: 14px 16px;
+    font-size: 15px;
+    padding: 14px 15px;
     width: 330px;
     border: 1px solid var(--light-gray-color);
     border-radius: 5px;
@@ -71,13 +78,13 @@ input {
 
 ::placeholder {
     color: var(--dark-gray-color);
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .forgot-pass {
     font-size: 13px;
     color: #0766ff;
-    margin: auto;
+    margin-inline: auto;
     text-decoration: none;
     position: relative;
 }
@@ -89,7 +96,7 @@ input {
 .forgot-pass::after {
     content: "";
     width: 330px;
-    height: 1px;
+    height: 0.5px;
     background-color: var(--light-gray-color);
     position: absolute;
     top: 40px;
@@ -97,10 +104,10 @@ input {
 }
 
 .login-btn {
-    font-size: 18px;
-    height: 48px;
+    font-size: 17px;
+    height: 45px;
     font-weight: 700;
-    padding: 0 16px;
+    padding: 0 15px;
     background-color: var(--blue-color);
     color: var(--white-color);
     border: none;
@@ -116,7 +123,7 @@ input {
     border: none;
     border-radius: 5px;
 
-    height: 48px;
+    height: 45px;
     margin: auto;
 }
 
@@ -125,6 +132,7 @@ input {
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    margin-bottom: 60px;
 }
 
 .create-page-para {
@@ -146,46 +154,48 @@ input {
 .footerArea {
     background-color: var(--white-color);
     height: 21vh;
-    padding: 25px;
+    padding: 25px 35px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+ */
+}
+
+.footer {
+    max-width: 900px;
+    margin: auto;
     display: flex;
     flex-direction: column;
 
-    gap: 15px;
+    gap: 8px;
 }
 
 .section-1 {
     display: flex;
     flex-direction: row;
-    font-size: 12px;
+    flex-wrap: wrap;
+    font-size: 11px;
     gap: 10px;
     list-style: none;
-    width: 900px;
-    margin: auto;
-    align-items: center;
+    max-width: 900px;
     color: var(--dark-gray-color);
-    position: relative;
 }
 
-.section-1::after {
-    content: "";
-    width: 900px;
-    position: absolute;
-    height: 1px;
-    top: 25px;
-    left: 0px;
-
-    background: var(--light-gray-color);
+.footer-hr {
+    height: 0.5px;
+    background-color: var(--light-gray-color);
 }
 
 .section-2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 12px;
+    font-size: 11px;
     justify-content: flex-start;
     list-style: none;
-    width: 900px;
+    max-width: 900px;
     gap: 5px;
-    margin: auto;
+
     color: var(--dark-gray-color);
 }

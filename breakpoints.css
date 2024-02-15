@@ -4,15 +4,14 @@
         width: 350px;
     }
 
-    .bodyArea {
+    .body-area {
         height: 79vh;
         display: flex;
         flex-direction: row;
         width: 900px;
-        margin: auto;
+
         align-items: center;
-        justify-content: center;
-        gap: 200px;
+        justify-content: space-between;
     }
 }
 
@@ -22,21 +21,21 @@
         width: 350px;
     }
 
-    .bodyArea {
+    .body-area {
         display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
         justify-content: center;
         width: auto;
+        min-width: 450px;
     }
 
     .heading-subheading {
         width: auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
+        margin-bottom: 20px;
     }
 }
