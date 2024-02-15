@@ -13,7 +13,7 @@
     --blue-hover-color: #2176ff;
     --green-hover-color: #35ae1a;
     --white-color: #ffffff;
-    --dark-gray-color: #969696;
+    --dark-gray-color: #868686;
     --light-gray-color: #d4d4d4;
 }
 
@@ -23,57 +23,58 @@ body {
 }
 
 .body-wrapper {
-    height: 79vh;
+    height: 75vh;
     display: flex;
     flex-direction: row;
     margin: auto;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 20px;
 }
 
 .body-area {
     display: flex;
     flex-direction: row;
-    max-width: 900px;
+    max-width: 980px;
     height: auto;
     margin: auto;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 25px;
 }
 
 .heading-subheading {
     width: auto;
     display: flex;
     flex-direction: column;
-    margin-bottom: 160px;
+    margin-bottom: 185px;
 }
 
 .facebook {
     color: var(--blue-color);
-    font-size: 50px;
+    font-size: 55px;
 }
 
 .facebook-subtitle {
     font-weight: 400;
-    font-size: 24px;
+    font-size: 27px;
 }
 
 .form {
-    height: 330px;
+    height: 350px;
+    width: 396px;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding: 15px 15px 0 15px;
-    gap: 12px;
+    padding: 16px 16px 0 16px;
+    gap: 13px;
 }
 
 input {
     font-size: 15px;
-    padding: 14px 15px;
-    width: 330px;
+    padding: 18px 16px;
+
     border: 1px solid var(--light-gray-color);
     border-radius: 5px;
     outline: none;
@@ -81,7 +82,7 @@ input {
 
 ::placeholder {
     color: var(--dark-gray-color);
-    font-size: 15px;
+    font-size: 16px;
 }
 
 input:focus {
@@ -89,7 +90,7 @@ input:focus {
 }
 
 .forgot-pass {
-    font-size: 13px;
+    font-size: 14px;
     color: #0766ff;
     margin-inline: auto;
     text-decoration: none;
@@ -111,8 +112,8 @@ input:focus {
 }
 
 .login-btn {
-    font-size: 17px;
-    height: 45px;
+    font-size: 20px;
+    height: 48px;
     font-weight: 700;
     padding: 0 15px;
     background-color: var(--blue-color);
@@ -128,14 +129,14 @@ input:focus {
 }
 
 .create-btn {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0 16px;
     background-color: var(--green-color);
     color: var(--white-color);
     border: none;
     border-radius: 5px;
-    height: 45px;
+    height: 48px;
     margin: auto;
     transition: 0.2s;
 }
@@ -148,13 +149,13 @@ input:focus {
 .form-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     margin-bottom: 60px;
 }
 
 .create-page-para {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .slidely-bold {
@@ -171,12 +172,12 @@ input:focus {
 
 .footer-area {
     background-color: var(--white-color);
-    height: 21vh;
+    height: 25vh;
     padding: 25px 35px;
 }
 
 .footer {
-    max-width: 900px;
+    max-width: 980px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -187,10 +188,10 @@ input:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 12px;
     gap: 10px;
     list-style: none;
-    max-width: 900px;
+    max-width: 980px;
     color: var(--dark-gray-color);
 }
 
@@ -203,10 +204,10 @@ input:focus {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    font-size: 11px;
+    font-size: 12px;
     justify-content: flex-start;
     list-style: none;
-    max-width: 900px;
+    max-width: 980px;
     gap: 3px;
     color: var(--dark-gray-color);
 }
@@ -225,7 +226,7 @@ ul li:hover {
 }
 
 .plus {
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(243, 243, 243);
     font-size: 10px;
     display: flex;
     align-items: center;
@@ -233,4 +234,9 @@ ul li:hover {
     padding: 4px 8px;
     border: 1px solid var(--dark-gray-color);
     color: #4f4f4f;
+    transition: 0.2s;
+}
+
+.plus:hover {
+    background-color: rgb(234, 234, 234);
 }
