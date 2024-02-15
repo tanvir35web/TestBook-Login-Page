@@ -171,7 +171,7 @@ input:focus {
 
 .footer-area {
     background-color: var(--white-color);
-    height: 21vh;
+    height: 21%;
     padding: 25px 35px;
 }
 
@@ -207,9 +207,16 @@ input:focus {
     justify-content: flex-start;
     list-style: none;
     max-width: 900px;
-    gap: 10px;
-
+    gap: 3px;
     color: var(--dark-gray-color);
+}
+
+.margin {
+    margin-top: 5px;
+}
+
+.section-2 li {
+    margin-right: 9px;
 }
 
 ul li:hover {

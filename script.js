@@ -14,11 +14,11 @@ const languages = [
 ];
 
 const services = [
-    "Sign Up",
-    "Log in",
-    "Messenger",
-    "Facebook Lite",
-    "Video",
+    "Sign Up ",
+    "Log in ",
+    "Messenger ",
+    "Facebook Lite ",
+    "Video ",
     "Places",
     "Games",
     "MarketPlace",
