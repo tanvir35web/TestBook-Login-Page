@@ -171,7 +171,7 @@ input:focus {
 
 .footer-area {
     background-color: var(--white-color);
-    height: 21%;
+    height: 21vh;
     padding: 25px 35px;
 }
 
