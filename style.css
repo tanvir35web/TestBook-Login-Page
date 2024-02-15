@@ -24,9 +24,9 @@ body {
     height: 79vh;
     display: flex;
     flex-direction: row;
-    max-width: 900px;
     margin: auto;
     align-items: center;
+    padding: 25px 35px;
 }
 
 .body-area {
@@ -155,11 +155,6 @@ input {
     background-color: var(--white-color);
     height: 21vh;
     padding: 25px 35px;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 15px;
- */
 }
 
 .footer {
@@ -167,7 +162,6 @@ input {
     margin: auto;
     display: flex;
     flex-direction: column;
-
     gap: 8px;
 }
 
