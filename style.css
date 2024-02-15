@@ -169,7 +169,7 @@ input:focus {
 
 /* ---------footer section ----------------*/
 
-.footerArea {
+.footer-area {
     background-color: var(--white-color);
     height: 21vh;
     padding: 25px 35px;

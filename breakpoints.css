@@ -6,7 +6,6 @@
 
     .body-area {
         height: 79vh;
-        display: flex;
         flex-direction: row;
         width: 900px;
         align-items: center;
@@ -21,7 +20,6 @@
     }
 
     .body-area {
-        display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -32,7 +30,6 @@
 
     .heading-subheading {
         width: auto;
-        display: flex;
         flex-direction: column;
         text-align: center;
         margin-bottom: 20px;
