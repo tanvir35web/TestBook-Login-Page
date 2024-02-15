@@ -23,7 +23,7 @@ body {
 }
 
 .body-wrapper {
-    height: 75vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -172,7 +172,7 @@ input:focus {
 
 .footer-area {
     background-color: var(--white-color);
-    height: 25vh;
+    height: 20vh;
     width: 100vw;
     padding: 25px 35px;
 }
