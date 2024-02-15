@@ -1,0 +1,42 @@
+@media screen and (max-width: 1080px) {
+    .facebook-subtitle {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .bodyArea {
+        height: 79vh;
+        display: flex;
+        flex-direction: row;
+        width: 900px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .facebook-subtitle {
+        font-size: 20px;
+        width: 350px;
+    }
+
+    .bodyArea {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .heading-subheading {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}

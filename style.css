@@ -11,7 +11,8 @@
     --blue-color: #0766ff;
     --green-color: #43b72a;
     --white-color: #ffffff;
-    --gray-color: #8b8d91;
+    --dark-gray-color: #969696;
+    --light-gray-color: #d4d4d4;
 }
 
 body {
@@ -23,22 +24,37 @@ body {
     height: 79vh;
     display: flex;
     flex-direction: row;
-    width: 900px;
+    max-width: 900px;
+    /* min-width: 700px; */
     margin: auto;
     align-items: center;
     gap: 50px;
+    padding: 30px;
 }
 
+.heading-subheading {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
 
+.facebook {
+    color: var(--blue-color);
+    font-size: 45px;
+}
+
+.facebook-subtitle {
+    font-weight: 400;
+    font-size: 24px;
+}
 
 .form {
-    height: 300px;
-    width: 330px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     background-color: var(--white-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 15px;
     gap: 12px;
     /* margin-bottom: 80px; */
@@ -46,14 +62,16 @@ body {
 }
 
 input {
-    font-size: 14px;
-    padding: 15px;
-    border: 1px solid var(--gray-color);
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    border: 1px solid var(--light-gray-color);
     border-radius: 5px;
 }
 
 ::placeholder {
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
+    font-size: 16px;
 }
 
 .forgot-pass {
@@ -61,42 +79,44 @@ input {
     color: #0766ff;
     margin: auto;
     text-decoration: none;
+    position: relative;
 }
 
 .forgot-pass:hover {
     text-decoration: underline;
 }
 
+.forgot-pass::after {
+    content: "";
+    width: 330px;
+    height: 1px;
+    background-color: var(--light-gray-color);
+    position: absolute;
+    top: 40px;
+    right: -96px;
+}
+
 .login-btn {
     font-size: 18px;
+    height: 48px;
     font-weight: 700;
-    padding: 10px;
+    padding: 0 16px;
     background-color: var(--blue-color);
     color: var(--white-color);
     border: none;
     border-radius: 5px;
 }
 
-.facebook {
-    color: var(--blue-color);
-    font-size: 45px;
-    margin-top: -140px;
-}
-
-.facebok-subtitle {
-    font-weight: 400;
-    font-size: 25px;
-}
-
 .create-btn {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
-    padding: 10px;
+    padding: 0 16px;
     background-color: var(--green-color);
     color: var(--white-color);
     border: none;
     border-radius: 5px;
-    width: 60%;
+
+    height: 48px;
     margin: auto;
 }
 
@@ -121,15 +141,15 @@ input {
     text-decoration: underline;
 }
 
-
 /* ---------footer section ----------------*/
 
 .footerArea {
     background-color: var(--white-color);
-    height: 20vh;
+    height: 21vh;
     padding: 25px;
     display: flex;
     flex-direction: column;
+
     gap: 15px;
 }
 
@@ -142,7 +162,19 @@ input {
     width: 900px;
     margin: auto;
     align-items: center;
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
+    position: relative;
+}
+
+.section-1::after {
+    content: "";
+    width: 900px;
+    position: absolute;
+    height: 1px;
+    top: 25px;
+    left: 0px;
+
+    background: var(--light-gray-color);
 }
 
 .section-2 {
@@ -155,5 +187,5 @@ input {
     width: 900px;
     gap: 5px;
     margin: auto;
-    color: var(--gray-color);
+    color: var(--dark-gray-color);
 }
